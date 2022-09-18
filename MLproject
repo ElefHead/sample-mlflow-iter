@@ -1,0 +1,10 @@
+name: sample-mlflow-iterate
+
+entry_points:
+  main:
+    parameters:
+      index: int
+      model_dir:
+        default: ""
+
+    command: python iterate.py -i {index} --model-dir {model_dir}
